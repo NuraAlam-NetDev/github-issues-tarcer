@@ -15,7 +15,7 @@ const pin = inputPin.value;
 // match credentials
 if(userName=="admin" && pin=="admin123"){
     alert("Login successfully")
-    window.location.assign("/home.html")
+    window.location.assign("home.html")
 }
 else{
     alert("invalid")
