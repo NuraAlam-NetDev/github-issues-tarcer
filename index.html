@@ -41,33 +41,35 @@
     </script>
     <link rel="stylesheet" href="style.css">
   </head>
-   <body class="min-h-screen max-w-md  mx-auto">
-<div class="login flex flex-col items-center">
-    <div class="logo flex flex-col items-center gap-3 pt-10 ">
-        <img src="assets/github-logo.png" alt="" srcset="">
-        <h1 class="font-semibold text-lg">GitHub Issues Tracker</h1>
-        <h3 class="text-[#64748B]">Sign in to manage your issues</h3>
+   <body class="flex justify-center items-center h-screen bg-gray-100">
 
-    </div>
+<div class="bg-white p-8 rounded shadow w-80">
 
-    <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
-      <div class="card-body">
-            <fieldset class="fieldset">
-            <label class="label font-medium text-lg text-[#1F2937]">Username</label>
-            <input id="input-username" type="text" class="input" placeholder="Enter Username" />
-            <label class="label font-medium text-lg text-[#1F2937]">Password</label>
-            <input id="input-password" type="password" class="input " placeholder="Password" />
-            
-            <button  id="login-btn" class="btn btn-primary mt-4">Sign in</button>
-            </fieldset>
-        </div>
-       
-  
+<h2 class="text-2xl font-bold mb-4 text-center">
+GitHub Issues Tracker
+</h2>
 
-    
-    
-    
+<input id="input-username"
+class="border p-2 w-full mb-3"
+placeholder="Username">
 
-    <script src="/script/login.js"></script>
-  </body>
+<input id="input-password"
+type="password"
+class="border p-2 w-full mb-3"
+placeholder="Password">
+
+<button id="login-btn"
+class="bg-blue-600 text-white w-full p-2 rounded">
+Sign In
+</button>
+
+<p class="text-sm mt-3 text-center">
+Demo: admin / admin123
+</p>
+
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
 </html>

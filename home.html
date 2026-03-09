@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Issues Tracker</title>
@@ -36,12 +36,69 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
-
-    </script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-<body>
-    
+  <body class="bg-gray-100">
+
+<!-- Navbar -->
+
+<div class="bg-white shadow p-4 flex justify-between">
+
+<h2 class="text-xl font-bold">
+Issues Tracker
+</h2>
+
+<div>
+
+<input id="search-input"
+class="border p-2"
+placeholder="Search">
+
+<button onclick="searchIssues()"
+class="bg-blue-600 text-white px-4 py-2">
+Search
+</button>
+
+</div>
+
+</div>
+
+
+<!-- Tabs -->
+
+<div class="flex gap-4 p-4">
+
+<button
+onclick="filterIssues('all')"
+class="bg-purple-600 text-white px-4 py-2 rounded">
+All
+</button>
+
+<button
+onclick="filterIssues('open')"
+class="bg-gray-300 px-4 py-2 rounded">
+Open
+</button>
+
+<button
+onclick="filterIssues('closed')"
+class="bg-gray-300 px-4 py-2 rounded">
+Closed
+</button>
+
+</div>
+
+
+<!-- Issues Grid -->
+
+<div
+id="issues-container"
+class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
+</div>
+
+
+<script src="js/issues.js"></script>
+
 </body>
 </html>
