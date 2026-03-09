@@ -1,22 +1,25 @@
-document.getElementById("login-btn")
-.addEventListener("click", function(){
+document.getElementById("login-btn").addEventListener("click", function(){
+    
 
-const username =
-document.getElementById("input-username").value;
+//  Enter Username  
 
-const password =
-document.getElementById("input-password").value;
+const userNameInput = document.getElementById("input-username")
+const userName = userNameInput.value;
 
-if(username === "admin" && password === "admin123"){
+// Enter a password
+const inputPin = document.getElementById("input-password")
+const pin = inputPin.value;
+// console.log(pin)
 
-window.location.href = "main.html";
-
+// match credentials
+if(userName=="admin" && pin=="admin123"){
+    alert("Login successfully")
+    window.location.assign("home.html")
 }
-
 else{
-
-alert("Wrong Credentials");
-
+    alert("invalid")
+    return
 }
+// login clicked 
 
-});
+})
